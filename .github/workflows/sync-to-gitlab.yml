@@ -36,7 +36,7 @@ jobs:
       # username is GitLab username stored in GitHub org's secrets
       # token is obtained from GitLab repo's group and entered into GitHub org's settings as secrets
       # Make sure url is correctly set to target repo's URL
-      - uses: action-pack/gitlab-sync@master
+      - uses: action-pack/gitlab-sync@v3
         with:
           username: ${{ secrets.GITLAB_USERNAME }}
           token: ${{ secrets.GITLAB_SYNC_TRUE_FORESIGHT }}
